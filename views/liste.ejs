@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste de données</title>
+    <link rel="stylesheet" type="text/css" href="<%= cssFile %>">
+</head>
+<body>
+    <h1>Lecture d'une base de données seulement 😅</h1>
+    <table>
+        <tr>
+            <th>Nom et prénoms</th>
+            <th>Email</th>
+        </tr>
+        <% données.forEach(function(row) { %>
+        <tr>
+                <td><%= row.nom %></td>
+                <td><%= row.email %></td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
